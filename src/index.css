@@ -1,0 +1,33 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #FAF8F5;
+    font-family: 'Inter', system-ui, sans-serif;
+    color: #0F172A;
+  }
+}
+
+@layer utilities {
+  .section-label {
+    @apply text-[11px] font-bold tracking-[0.15em] uppercase text-text-muted;
+  }
+  .card-dark {
+    @apply bg-white border border-border-dark rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300;
+  }
+  .card-light {
+    @apply bg-white border border-border-light rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300;
+  }
+  .btn-primary {
+    @apply bg-accent hover:bg-accent-hover text-white text-sm font-semibold
+           px-6 py-3 rounded-xl transition-all duration-200 shadow-sm hover:shadow shadow-accent/20 cursor-pointer;
+  }
+  .btn-ghost {
+    @apply border border-accent text-accent hover:bg-accent hover:text-white
+           text-sm font-semibold px-6 py-3 rounded-xl transition-all duration-200 cursor-pointer;
+  }
+}

@@ -5,63 +5,60 @@ export default function Results() {
 
   const caseStudies = [
     {
-      client: "Lawless Clothing",
-      tag: "E-Commerce",
-      tagBg: "bg-purple-50 text-purple-600 border-purple-100",
-      challenge: "Needed a robust, scalable e-commerce storefront with an easy-to-use content management system separated from the frontend.",
-      solution: "Developed a headless Next.js architecture with Sanity CMS for independent catalog management, deployed on Vercel.",
-      stat: "Lightning-Fast Storefront",
-      quote: "Delivered a production-ready, lightning-fast shopping experience that empowers us to manage our retail catalog independently.",
-      author: "Lawless Clothing"
+      client: 'Luhuhi Trading',
+      tag: 'Retail',
+      tagBg: 'bg-purple-50 text-purple-600 border-purple-100',
+      challenge: 'Downtime and slow IT support were damaging sales on peak days.',
+      solution: 'We fixed server outages, improved network monitoring, and reduced monthly IT spend by R18,000.',
+      stat: '40% cost cut in 6 months',
+      quote: 'We cut our IT cost by 40% and support is now fast and reliable.',
+      author: 'Operations Director'
     },
     {
-      client: "Luhuhi Trading",
-      tag: "Corporate Platform",
-      tagBg: "bg-emerald-50 text-emerald-600 border-emerald-100",
-      challenge: "Required a complete multi-page web presence with intuitive navigation and seamless lead generation without a complex backend.",
-      solution: "Engineered a React SPA with an integrated direct-to-email funnel via EmailJS SDK for instant quote requests.",
-      stat: "Zero-Maintenance Lead Gen",
-      quote: "Created an optimized, zero-maintenance contact pipeline that allows potential B2B clients to reach out directly from the site.",
-      author: "Luhuhi Trading"
+      client: 'Lawless Clothing',
+      tag: 'Logistics',
+      tagBg: 'bg-emerald-50 text-emerald-600 border-emerald-100',
+      challenge: 'Ticket backlogs and network chaos were slowing dispatch operations.',
+      solution: 'We fixed the support queue, enforced backups, and reduced issue turnaround by 70%.',
+      stat: '70% faster ticket resolution',
+      quote: 'Our dispatch team now gets answers in minutes, not hours.',
+      author: 'Finance Manager'
     },
     {
-      client: "PMMT Solutions",
-      tag: "Product SPA",
-      tagBg: "bg-blue-50 text-blue-600 border-blue-100",
-      challenge: "Needed a highly responsive, modern digital storefront to deliver a fast, fluid user experience for a product-focused business.",
-      solution: "Built a dynamic Single-Page Application (SPA) using React and Vite, optimizing asset loading and component-driven UI.",
-      stat: "Instant Asset Loading",
-      quote: "Provides us with a high-performance digital storefront architecture that loads instantly, improving user engagement and retention.",
-      author: "PMMT Solutions"
+      client: 'Pmmt Solutions',
+      tag: 'Healthcare',
+      tagBg: 'bg-blue-50 text-blue-600 border-blue-100',
+      challenge: 'Microsoft 365 access issues were disrupting patient admin and reporting.',
+      solution: 'We fixed the M365 rollout and restored secure access across the practice in five days.',
+      stat: '5-day M365 recovery',
+      quote: 'Our clinic systems work again and the team can trust email and file sharing.',
+      author: 'IT Manager'
     },
     {
-      client: "Khashane Attorneys Inc.",
-      tag: "Legal Services",
-      tagBg: "bg-slate-50 text-slate-700 border-slate-200",
-      challenge: "Required a sleek, trustworthy, and performant web platform focused on fast loading speeds and modern UI practices.",
-      solution: "Implemented a utility-first Tailwind CSS design with SEO-optimized asset delivery and a fully responsive structure.",
-      stat: "Polished Professional Identity",
-      quote: "Established a polished online identity for the firm, enhancing credibility and ensuring a seamless experience across all devices.",
-      author: "Khashane Attorneys Inc."
+      client: 'Khashane Attorneys',
+      tag: 'Professional Services',
+      tagBg: 'bg-slate-50 text-slate-700 border-slate-200',
+      challenge: 'A weak backup process left the firm exposed to data loss.',
+      solution: 'We fixed backup gaps, added monitoring, and confirmed restore tests on demand.',
+      stat: '100% backup checks active',
+      quote: 'We now know our data is safe and the restore process works.',
+      author: 'Practice Manager'
     }
   ];
 
   return (
     <section id="results" className="bg-bg-secondary py-20 relative z-20">
       <div className="w-full max-w-7xl mx-auto px-6">
-        
-        {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 select-none">
-          <span className="section-label mb-2 block">Client Case Studies & Projects</span>
+          <span className="section-label mb-2 block">Case Studies</span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-text-dark tracking-tight leading-tight">
-            Digital transformations for modern brands.
+            Real improvements for local businesses.
           </h2>
           <p className="text-base text-text-secondary mt-4">
-            See how LK Digital helps firms build high-performance web applications, scalable e-commerce platforms, and professional corporate identities.
+            Each case shows how we fixed a specific IT problem and delivered measurable uptime, cost, or response-time gains.
           </p>
         </div>
 
-        {/* Case Studies Grid (2 column layout for 4 items) */}
         <div 
           ref={ref}
           className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch"
@@ -77,7 +74,6 @@ export default function Results() {
               }}
             >
               <div>
-                {/* Header Tag and Client Title */}
                 <div className="flex justify-between items-center mb-5 gap-3">
                   <span className="text-xs font-black text-text-dark tracking-wide">{study.client}</span>
                   <span className={`text-[9px] font-black uppercase tracking-widest px-2.5 py-1 rounded-md border ${study.tagBg}`}>
@@ -85,7 +81,6 @@ export default function Results() {
                   </span>
                 </div>
 
-                {/* Challenge & Solution details */}
                 <div className="flex flex-col gap-4 mb-6">
                   <div>
                     <span className="text-[10px] font-bold text-text-muted uppercase tracking-wider block mb-1">Challenge</span>
@@ -102,19 +97,14 @@ export default function Results() {
                 </div>
               </div>
 
-              {/* Stat Indicator, Divider and Quote details */}
               <div className="mt-auto">
-                
-                {/* KPI metrics */}
                 <div className="bg-bg-light border border-border-light rounded-xl py-2 px-3 text-xs font-bold text-accent mb-6 text-center select-none flex items-center justify-center gap-1.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-accent animate-ping" />
                   <span>{study.stat}</span>
                 </div>
 
-                {/* Divider Line */}
                 <div className="w-full h-px bg-border-light mb-6" />
 
-                {/* Review Italicized Quote */}
                 <figure className="relative pl-4 border-l-2 border-accent/20">
                   <blockquote className="text-xs sm:text-sm text-text-secondary italic leading-relaxed">
                     "{study.quote}"
@@ -128,7 +118,6 @@ export default function Results() {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

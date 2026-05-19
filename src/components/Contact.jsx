@@ -8,9 +8,7 @@ export default function Contact() {
   
   const [formData, setFormData] = useState({
     user_name: '',
-    user_email: '',
-    user_company: '',
-    user_retainer: 'Business Retainer (R9,999/mo)',
+    user_contact: '',
     message: ''
   });
 
@@ -33,15 +31,12 @@ export default function Contact() {
     const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
     if (!serviceId || !templateId || !publicKey) {
-      // Mockup submission for testing environments
       setTimeout(() => {
         setLoading(false);
         setStatus('success');
         setFormData({
           user_name: '',
-          user_email: '',
-          user_company: '',
-          user_retainer: 'Business Retainer (R9,999/mo)',
+          user_contact: '',
           message: ''
         });
       }, 1500);
@@ -55,9 +50,7 @@ export default function Contact() {
         setStatus('success');
         setFormData({
           user_name: '',
-          user_email: '',
-          user_company: '',
-          user_retainer: 'Business Retainer (R9,999/mo)',
+          user_contact: '',
           message: ''
         });
       })
@@ -76,24 +69,28 @@ export default function Contact() {
           
           {/* Left Column: Form Description */}
           <div className="lg:col-span-5 select-none">
-            <span className="section-label mb-2 block">Secure Your Retainer Plan</span>
+            <span className="section-label mb-2 block">Book Free IT Assessment</span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-text-dark tracking-tight leading-tight mb-6">
-              Let's build reliable IT foundations together.
+              Book a free assessment for fixed-rate IT care.
             </h2>
             <p className="text-base text-text-secondary leading-relaxed mb-6">
-              Submit your inquiry and our certified cloud engineers will connect with you within 2 hours to audit your current system setups.
+              Submit your request and the team will call you within two hours with a practical review of your current systems.
             </p>
             
             <div className="flex flex-col gap-4 mt-8 text-sm font-semibold text-text-secondary">
               <div className="flex items-center gap-3.5">
                 <span className="w-9 h-9 bg-accent/8 border border-accent/20 rounded-lg flex items-center justify-center text-accent">
-                  📍
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-4 h-4">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M8 6h13M8 12h13M8 18h13M4 6h.01M4 12h.01M4 18h.01" />
+                  </svg>
                 </span>
-                <span>Gauteng, South Africa (Sandton Office)</span>
+                <span>South Africa</span>
               </div>
               <div className="flex items-center gap-3.5">
                 <span className="w-9 h-9 bg-accent/8 border border-accent/20 rounded-lg flex items-center justify-center text-accent">
-                  ✉️
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-4 h-4">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M16 12h4M4 12h4M12 4v16" />
+                  </svg>
                 </span>
                 <span>info@lutendotech.com</span>
               </div>
@@ -130,56 +127,22 @@ export default function Contact() {
                   />
                 </div>
 
-                {/* Grid Inputs (Email & Company) */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div className="grid grid-cols-1 gap-5">
                   <div className="flex flex-col gap-1.5">
-                    <label htmlFor="user_email" className="text-xs font-bold text-text-dark uppercase tracking-wider">
-                      Business Email
-                    </label>
-                    <input
-                      type="email"
-                      id="user_email"
-                      name="user_email"
-                      required
-                      value={formData.user_email}
-                      onChange={handleInputChange}
-                      placeholder="name@company.co.za"
-                      className="bg-bg-light border border-border-light rounded-xl py-3 px-4 text-sm text-text-dark font-medium placeholder-text-muted focus:outline-none focus:border-accent focus:bg-white transition-all"
-                    />
-                  </div>
-                  <div className="flex flex-col gap-1.5">
-                    <label htmlFor="user_company" className="text-xs font-bold text-text-dark uppercase tracking-wider">
-                      Company Name
+                    <label htmlFor="user_contact" className="text-xs font-bold text-text-dark uppercase tracking-wider">
+                      Email or phone
                     </label>
                     <input
                       type="text"
-                      id="user_company"
-                      name="user_company"
+                      id="user_contact"
+                      name="user_contact"
                       required
-                      value={formData.user_company}
+                      value={formData.user_contact}
                       onChange={handleInputChange}
-                      placeholder="Your firm name"
+                    placeholder="name@company.co.za or 072 689 0507"
                       className="bg-bg-light border border-border-light rounded-xl py-3 px-4 text-sm text-text-dark font-medium placeholder-text-muted focus:outline-none focus:border-accent focus:bg-white transition-all"
                     />
                   </div>
-                </div>
-
-                {/* Retainer Selection Box */}
-                <div className="flex flex-col gap-1.5">
-                  <label htmlFor="user_retainer" className="text-xs font-bold text-text-dark uppercase tracking-wider">
-                    Select Retainer Tier
-                  </label>
-                  <select
-                    id="user_retainer"
-                    name="user_retainer"
-                    value={formData.user_retainer}
-                    onChange={handleInputChange}
-                    className="bg-bg-light border border-border-light rounded-xl py-3 px-4 text-sm text-text-dark font-semibold focus:outline-none focus:border-accent focus:bg-white transition-all cursor-pointer"
-                  >
-                    <option value="Starter Retainer (R4,999/mo)">Starter Retainer (R4,999 / month)</option>
-                    <option value="Business Retainer (R9,999/mo)">Business Retainer (R9,999 / month)</option>
-                    <option value="Enterprise Retainer (Custom)">Enterprise Retainer (Custom Quoted)</option>
-                  </select>
                 </div>
 
                 {/* Message text area */}

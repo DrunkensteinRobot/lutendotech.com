@@ -6,17 +6,16 @@ export default function Pricing() {
   const pricingTiers = [
     {
       name: "Starter Retainer",
-      price: "R4,999",
+      price: "R5,999",
       period: "per month",
-      description: "Perfect for growing local startups needing basic infrastructure support & standard cloud care.",
+      description: "Basic IT care for smaller teams with a fixed monthly rate and clear support terms.",
       features: [
-        "Up to 10 active endpoint users support",
-        "Business hour remote helpdesk care",
-        "Basic Microsoft 365 configuration",
-        "Weekly automated offsite backups",
-        "24-hour response SLA target"
+        "Support for up to 10 users",
+        "Guaranteed response time of 60 minutes",
+        "Secure cloud backup checks",
+        "Microsoft 365 support and patches"
       ],
-      ctaLabel: "Get Starter Retainer",
+      ctaLabel: "Book Starter Assessment",
       popular: false
     },
     {
@@ -49,6 +48,20 @@ export default function Pricing() {
       ],
       ctaLabel: "Schedule Consultation",
       popular: false
+    },
+    {
+      name: "Hourly Support",
+      price: "R850",
+      period: "per hour",
+      description: "Flexible one-off assistance for urgent fixes, project work, or support outside a retainer.",
+      features: [
+        "Ad hoc IT and cloud support",
+        "Emergency fixes and migration help",
+        "No monthly commitment required",
+        "Available for urgent or temporary work"
+      ],
+      ctaLabel: "Request Hourly Support",
+      popular: false
     }
   ];
 
@@ -58,19 +71,19 @@ export default function Pricing() {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 select-none">
-          <span className="section-label mb-2 block">Simple Retainer Tiers</span>
+          <span className="section-label mb-2 block">Fixed Monthly IT Rates</span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-text-dark tracking-tight leading-tight">
-            Flexible IT plans, zero lock-in contracts.
+            Plans from R5,999/month with no hidden fees.
           </h2>
           <p className="text-base text-text-secondary mt-4">
-            Select a plan that aligns with your headcount and operations. Upgrade or scale down whenever you need.
+            Clear retainer pricing for South African businesses, with optional hourly support for one-off work.
           </p>
         </div>
 
         {/* Pricing Cards Grid (3 Columns) */}
         <div 
           ref={ref}
-          className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch"
+          className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 items-stretch"
         >
           {pricingTiers.map((tier, i) => (
             <div 

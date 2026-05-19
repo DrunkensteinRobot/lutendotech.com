@@ -5,29 +5,29 @@ export default function Credentials() {
 
   const credentialsData = [
     {
-      title: "Microsoft Partner",
-      description: "Cloud Solution Provider",
-      badge: "☁️ Certified"
+      title: 'Microsoft Partner',
+      description: 'Certified cloud support for local businesses',
+      badge: 'Partner'
     },
     {
-      title: "Cloud Architecture",
-      description: "Infrastructure Engineering",
-      badge: "🛡️ Administrator"
+      title: 'ISO 27001 Ready',
+      description: 'Security processes and audit controls',
+      badge: 'Security'
     },
     {
-      title: "Microsoft 365",
-      description: "Enterprise Workspaces",
-      badge: "💼 Specialist"
+      title: '8 years in business',
+      description: 'Serving South African companies since 2018',
+      badge: 'Experience'
     },
     {
-      title: "Atera Partner",
-      description: "Endpoint RMM & PSA Care",
-      badge: "🚀 Operations"
+      title: '15 clients served',
+      description: 'Real local firms rely on our IT retainers',
+      badge: 'Clients'
     },
     {
-      title: "Power Automate",
-      description: "Enterprise Integrations",
-      badge: "⚙️ Automation"
+      title: 'Local support team',
+      description: 'Fast response times in South African time',
+      badge: 'Local'
     }
   ];
 
@@ -39,15 +39,13 @@ export default function Credentials() {
           visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
         }`}
       >
-        {/* Short Header */}
         <div className="text-center max-w-2xl mx-auto mb-10 select-none">
-          <span className="section-label mb-1 block">Certified IT Standards</span>
+          <span className="section-label mb-1 block">Trust Signals</span>
           <h2 className="text-xl sm:text-2xl font-extrabold text-text-dark tracking-tight">
-            Our Enterprise Toolset & Frameworks
+            Clear indicators that your IT is managed well.
           </h2>
         </div>
 
-        {/* Credentials Badges Horizontal Grid */}
         <div className="grid grid-cols-2 md:grid-cols-5 gap-5 select-none justify-center">
           {credentialsData.map((item, i) => (
             <div 
@@ -66,7 +64,6 @@ export default function Credentials() {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

@@ -34,41 +34,32 @@ export default function Hero() {
 
       <div className="w-full max-w-7xl mx-auto px-6 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
         
-        {/* Left Column - High Converting Value Proposition */}
         <div 
           ref={ref}
           className={`lg:col-span-6 flex flex-col transition-all duration-700 delay-100 ${
             visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >
-          {/* Tagline Badge */}
-          <div className="inline-flex items-center gap-2 bg-accent/8 border border-accent/20 rounded-full py-1 px-3.5 mb-6 w-fit animate-pulse">
-            <span className="w-2 h-2 rounded-full bg-accent-cyan" />
+          <div className="inline-flex items-center gap-2 bg-accent/8 border border-accent/20 rounded-full py-1 px-3.5 mb-6 w-fit">
             <span className="text-[10px] font-bold tracking-[0.1em] text-accent uppercase">
-              All-In-One IT Co-Sourcing Partner
+              99.9% uptime target
             </span>
           </div>
 
-          {/* Main Headline */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-text-dark leading-[1.1] mb-6">
-            The all-in-one IT platform for your{' '}
-            <span className="bg-gradient-to-r from-accent to-[#004ecc] bg-clip-text text-transparent">
-              business success.
-            </span>
+            We fix IT downtime and slow support
           </h1>
 
-          {/* Subheading Paragraph */}
           <p className="text-base sm:text-lg text-text-secondary leading-relaxed mb-8 max-w-xl">
-            Say goodbye to fragmented support queues, unpredictable billing cycles, and broken technology. Get unlimited IT service desks, cloud scaling, and AI workflow automations on a single proactive retainer.
+            Based in Gauteng, we keep systems stable and response times fast. You get clear pricing, backups that work, and a local team on hand.
           </p>
 
-          {/* Value Checklist (Pink checkmarks, high-converting) */}
-          <ul className="flex flex-col gap-4 mb-8">
+          <ul className="flex flex-col gap-4 mb-8 max-w-md">
             {[
-              "Unlimited Remote IT Support & Network Care",
-              "Automated Cloud Scaling & Microsoft 365 Setup",
-              "Proactive Cloud Architecture Audits",
-              "AI-Driven Workflows to Cut Internal Manual Tasks"
+              'Response time: 25 minutes for critical incidents',
+              'Save R15,000+ monthly on IT overhead',
+              'Fixed monthly rate from R5,999',
+              'Local support from a South African team'
             ].map((text, i) => (
               <li key={i} className="flex items-start gap-3 text-sm font-medium text-text-secondary select-none">
                 <span className="flex-shrink-0 w-5 h-5 bg-accent-cyan/10 border border-accent-cyan/20 rounded-full flex items-center justify-center text-accent-cyan mt-0.5">
@@ -81,26 +72,24 @@ export default function Hero() {
             ))}
           </ul>
 
-          {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-4">
             <a href="#contact" className="btn-primary py-3 px-8 text-center text-sm font-bold shadow-lg shadow-accent/20 hover:scale-[1.01] transition-all">
-              Book a 30-Day retainer trial
+              Book Free IT Assessment
             </a>
-            <a href="#services" className="btn-ghost py-3 px-8 text-center text-sm font-bold bg-white/40 hover:bg-white hover:scale-[1.01] transition-all">
-              Explore our services
+            <a href="#faq" className="btn-ghost py-3 px-8 text-center text-sm font-bold bg-white/40 hover:bg-white hover:scale-[1.01] transition-all">
+              See common questions
             </a>
           </div>
 
-          {/* Risk Mitigation Subtext */}
           <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-text-muted mt-2 font-medium">
             <span className="flex items-center gap-1">
-              <span className="text-accent">✓</span> No long-term lock-ins
+              <span className="text-accent">✓</span> 15 businesses trust our local IT support
             </span>
             <span className="flex items-center gap-1">
-              <span className="text-accent">✓</span> Standard SLA guarantee
+              <span className="text-accent">✓</span> 8 years serving local companies
             </span>
             <span className="flex items-center gap-1">
-              <span className="text-accent">✓</span> Proudly Gauteng based
+              <span className="text-accent">✓</span> 99.9% uptime goal
             </span>
           </div>
         </div>

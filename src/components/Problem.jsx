@@ -58,12 +58,12 @@ export default function Problem() {
         
         {/* Section Headings */}
         <div className="text-center max-w-3xl mx-auto mb-16 select-none">
-          <span className="section-label mb-2 block">Staffing & Retainers comparison</span>
+          <span className="section-label mb-2 block">IT support comparison</span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-text-dark tracking-tight leading-tight">
-            Stop overpaying for fragmented, legacy IT management.
+            Stop paying more for slow support and unclear billing.
           </h2>
           <p className="text-base text-text-secondary mt-4">
-            Compare standard IT support paths with LK Digital's high-efficiency co-sourcing model.
+            Compare in-house hires, legacy MSP contracts, and a predictable IT retainer.
           </p>
         </div>
 
@@ -130,7 +130,7 @@ export default function Problem() {
               {/* Call to Action Button */}
               {card.type === 'favorable' && (
                 <a href="#contact" className="btn-primary w-full text-center block text-xs py-3 font-extrabold tracking-wide uppercase mt-auto">
-                  Partner with LK Digital
+                  Book free assessment
                 </a>
               )}
             </div>

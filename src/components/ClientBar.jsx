@@ -18,8 +18,6 @@ export default function ClientBar() {
           visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
         }`}
       >
-        
-        {/* Rating/Trust Widget Header */}
         <div className="flex flex-col sm:flex-row items-center gap-3 bg-white border border-border-dark py-2 px-5 rounded-full shadow-2xs select-none">
           <div className="flex items-center gap-0.5 text-accent-cyan">
             {[...Array(5)].map((_, i) => (
@@ -29,18 +27,16 @@ export default function ClientBar() {
             ))}
           </div>
           <span className="text-xs font-semibold text-text-secondary text-center sm:text-left">
-            Rated <span className="text-text-dark font-extrabold">4.9/5 stars</span> for IT Excellence — trusted by businesses across Gauteng
+            Rated <span className="text-text-dark font-extrabold">4.9/5 stars</span> for IT excellence. 15 businesses rely on us.
           </span>
         </div>
 
-        {/* Client Pills Strip */}
         <div className="w-full flex flex-wrap justify-center items-center gap-4 sm:gap-6 mt-2 select-none">
           {clients.map((client, i) => (
             <div 
               key={i}
               className="flex items-center gap-2.5 bg-white border border-border-light rounded-xl px-5 py-2.5 shadow-2xs hover:border-accent/40 hover:-translate-y-0.5 transition-all duration-300"
             >
-              <span className="text-base">{client.icon}</span>
               <span className="text-xs sm:text-sm font-bold text-text-secondary">
                 {client.name}
               </span>

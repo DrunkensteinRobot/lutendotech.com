@@ -17,7 +17,7 @@ export default function Nav() {
 
   // Scrollspy observer for highlighting active navigation elements
   useEffect(() => {
-    const sections = ['home', 'services', 'results', 'pricing', 'contact'];
+    const sections = ['home', 'services', 'about', 'results', 'faq', 'contact'];
     
     const observerOptions = {
       root: null,
@@ -43,11 +43,16 @@ export default function Nav() {
     return () => observer.disconnect();
   }, []);
 
+  const phoneNumber = '072 689 0507';
+  const phoneLink = 'tel:+27726890507';
+  const whatsappLink = 'https://wa.me/27726890507';
+
   const navLinks = [
     { label: 'Home', target: '#home', id: 'home' },
     { label: 'Services', target: '#services', id: 'services' },
-    { label: 'Results', target: '#results', id: 'results' },
-    { label: 'Pricing', target: '#pricing', id: 'pricing' },
+    { label: 'About', target: '#about', id: 'about' },
+    { label: 'Case Studies', target: '#results', id: 'results' },
+    { label: 'FAQ', target: '#faq', id: 'faq' },
     { label: 'Contact', target: '#contact', id: 'contact' }
   ];
 
@@ -55,19 +60,18 @@ export default function Nav() {
     <header 
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         scrolled 
-          ? 'bg-bg-primary/80 backdrop-blur-md border-b border-border-dark/30 py-3.5 shadow-sm' 
+          ? 'bg-bg-primary/90 backdrop-blur-md border-b border-border-dark/30 py-3.5 shadow-sm' 
           : 'bg-transparent py-5'
       }`}
     >
       <div className="w-full max-w-7xl mx-auto px-6 flex justify-between items-center">
         
-        {/* Branding Logo */}
         <a href="#home" className="flex items-center gap-2.5 group select-none">
           <div className="w-8.5 h-8.5 bg-accent rounded-lg flex items-center justify-center text-white font-bold text-sm shadow-sm group-hover:scale-105 transition-transform duration-200">
             LK
           </div>
           <span className="font-bold text-text-dark text-base tracking-wide group-hover:text-accent transition-colors duration-200">
-            LK Digital Solutions
+            LK Digital
           </span>
         </a>
 
@@ -88,14 +92,15 @@ export default function Nav() {
           ))}
         </nav>
 
-        {/* Desktop CTA action button */}
-        <div className="hidden md:block">
+        <div className="hidden md:flex items-center gap-4">
+          <a href={phoneLink} className="text-sm font-semibold text-text-secondary hover:text-accent transition-colors">
+            Call now: {phoneNumber}
+          </a>
           <a href="#contact" className="btn-primary py-2 px-5 text-xs font-semibold rounded-lg">
-            Book a discovery call
+            Book Free IT Assessment
           </a>
         </div>
 
-        {/* Mobile Menu Toggle Button */}
         <button
           type="button"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -135,13 +140,27 @@ export default function Nav() {
             ))}
           </nav>
           
-          <div className="pb-12">
+          <div className="flex flex-col gap-4 pb-12">
             <a
-              href="#contact"
+              href={phoneLink}
+              onClick={() => setMobileMenuOpen(false)}
+              className="w-full border border-border-dark rounded-xl py-3 text-center text-sm font-semibold text-text-dark hover:text-accent transition-colors"
+            >
+              Call now: {phoneNumber}
+            </a>
+            <a
+              href={whatsappLink}
               onClick={() => setMobileMenuOpen(false)}
               className="w-full btn-primary text-center block"
             >
-              Book a discovery call
+              WhatsApp us
+            </a>
+            <a
+              href="#contact"
+              onClick={() => setMobileMenuOpen(false)}
+              className="w-full bg-white border border-accent text-accent rounded-xl py-3 text-center text-sm font-semibold hover:bg-accent hover:text-white transition-all"
+            >
+              Book Free IT Assessment
             </a>
           </div>
         </div>

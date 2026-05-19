@@ -15,7 +15,7 @@ export default function Footer() {
                 LK
               </div>
               <span className="font-bold text-text-dark text-base tracking-wide group-hover:text-accent transition-colors duration-200">
-                LK Digital Solutions
+                LK Digital
               </span>
             </a>
             <p className="text-xs sm:text-sm text-text-secondary leading-relaxed max-w-xs mt-1">
@@ -39,15 +39,14 @@ export default function Footer() {
           {/* Local Support Area */}
           <div className="md:col-span-4 flex flex-col gap-3">
             <h4 className="text-[10px] font-bold text-text-dark uppercase tracking-widest">
-              Gauteng Local Support
+              South African Local Support
             </h4>
             <p className="text-xs text-text-secondary leading-relaxed">
-              Our certified cloud solutions engineers operate from Sandton, Johannesburg. We deliver fast hybrid helpdesk response queues to clients throughout Gauteng.
+              Our certified cloud teams support businesses across South Africa with fast local response times and clear IT reporting.
             </p>
-            {/* South Africa flag and location pill */}
             <div className="inline-flex items-center gap-2 bg-white border border-border-dark py-1.5 px-3 rounded-xl w-fit shadow-2xs mt-2 select-none text-[10px] font-extrabold text-text-secondary">
-              <span>🇿🇦</span>
-              <span>Sandton Office, South Africa</span>
+              <span>SA</span>
+              <span>Based in Gauteng, serving South Africa</span>
             </div>
           </div>
 
@@ -59,7 +58,7 @@ export default function Footer() {
         {/* Footer Bottom Section */}
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] font-bold text-text-muted select-none">
           <span>
-            © {currentYear} LK Digital Solutions (Pty) Ltd. All rights reserved.
+            © {currentYear} LK Digital. All rights reserved.
           </span>
           <div className="flex gap-5">
             <a href="#contact" className="hover:text-accent transition-colors">IT Support SLA Helpdesk</a>

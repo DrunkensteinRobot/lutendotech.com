@@ -5,10 +5,10 @@ export default function StatBar() {
   const { ref, visible } = useScrollFade();
   
   const statsList = [
-    { target: 99.4, suffix: '%', label: 'Average SLA Uptime SLA', delay: 0 },
-    { target: 15, suffix: ' Min', label: 'Critical Response Time', delay: 100 },
-    { target: 50, suffix: '+', label: 'Cloud Deployments', delay: 200 },
-    { target: 100, suffix: '%', label: 'Gauteng Customer Satisfaction', delay: 300 }
+    { target: 99.9, suffix: '%', label: 'Uptime goal', delay: 0 },
+    { target: 25, suffix: ' min', label: 'Critical response time', delay: 100 },
+    { target: 15, suffix: '', label: 'Local businesses supported', delay: 200 },
+    { target: 8, suffix: ' yrs', label: 'Local business experience', delay: 300 }
   ];
 
   return (

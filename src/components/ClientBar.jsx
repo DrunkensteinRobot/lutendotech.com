@@ -4,10 +4,10 @@ export default function ClientBar() {
   const { ref, visible } = useScrollFade();
 
   const clients = [
-    { name: "Khashane Attorneys", icon: "⚖️" },
-    { name: "Siyaphambili Logistics", icon: "🚛" },
-    { name: "Ekurhuleni Med", icon: "🏥" },
-    { name: "Apex Retailers", icon: "🛒" }
+    { name: "Luhuhi Trading", icon: "🛍️" },
+    { name: "Lawless Clothing", icon: "👕" },
+    { name: "Pmmt Solutions", icon: "💼" },
+    { name: "Khashane Attorneys", icon: "⚖️" }
   ];
 
   return (

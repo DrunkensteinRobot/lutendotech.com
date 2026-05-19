@@ -15,12 +15,15 @@ export default function Footer() {
                 LK
               </div>
               <span className="font-bold text-text-dark text-base tracking-wide group-hover:text-accent transition-colors duration-200">
-                LK Digital
+                LK Digital Solutions
               </span>
             </a>
             <p className="text-xs sm:text-sm text-text-secondary leading-relaxed max-w-xs mt-1">
               All-in-one IT co-sourcing retainers tailored for growing professional firms. We secure your architectures, manage your helpdesks, and automate your manual administrative tasks.
             </p>
+            <a href="https://www.linkedin.com/in/lutendo-kone-80497915b/" target="_blank" rel="noreferrer" className="text-xs font-semibold text-accent hover:text-accent-light transition-colors">
+              LinkedIn: Lutendo Kone
+            </a>
           </div>
 
           {/* Quick Links Index */}
@@ -58,7 +61,7 @@ export default function Footer() {
         {/* Footer Bottom Section */}
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] font-bold text-text-muted select-none">
           <span>
-            © {currentYear} LK Digital. All rights reserved.
+            © {currentYear} LK Digital Solutions. All rights reserved.
           </span>
           <div className="flex gap-5">
             <a href="#contact" className="hover:text-accent transition-colors">IT Support SLA Helpdesk</a>

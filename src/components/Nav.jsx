@@ -71,7 +71,7 @@ export default function Nav() {
             LK
           </div>
           <span className="font-bold text-text-dark text-base tracking-wide group-hover:text-accent transition-colors duration-200">
-            LK Digital
+            LK Digital Solutions
           </span>
         </a>
 

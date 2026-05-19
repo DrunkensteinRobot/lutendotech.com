@@ -13,7 +13,7 @@ export default function About() {
               visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}
           >
-            <span className="section-label mb-2 block">About LK Digital</span>
+            <span className="section-label mb-2 block">About LK Digital Solutions</span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-text-dark tracking-tight leading-tight mb-6">
               We keep business IT stable and simple.
             </h2>

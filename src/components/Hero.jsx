@@ -47,19 +47,19 @@ export default function Hero() {
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-text-dark leading-[1.1] mb-6">
-            We fix IT downtime and slow support
+            Managed IT + process optimization that scales
           </h1>
 
           <p className="text-base sm:text-lg text-text-secondary leading-relaxed mb-8 max-w-xl">
-            Based in Gauteng, we keep systems stable and response times fast. You get clear pricing, backups that work, and a local team on hand.
+            Based in Gauteng, we manage your IT foundation and optimize your operations through automation. You get stable systems, faster workflows, and clear pricing.
           </p>
 
           <ul className="flex flex-col gap-4 mb-8 max-w-md">
             {[
               'Response time: 25 minutes for critical incidents',
-              'Save R15,000+ monthly on IT overhead',
-              'Fixed monthly rate from R5,999',
-              'Local support from a South African team'
+              'Workflow automation to save 10+ hours weekly',
+              'ITSM implementation and process design',
+              'Fixed monthly rate from R5,999'
             ].map((text, i) => (
               <li key={i} className="flex items-start gap-3 text-sm font-medium text-text-secondary select-none">
                 <span className="flex-shrink-0 w-5 h-5 bg-accent-cyan/10 border border-accent-cyan/20 rounded-full flex items-center justify-center text-accent-cyan mt-0.5">

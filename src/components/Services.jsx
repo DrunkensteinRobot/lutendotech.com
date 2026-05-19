@@ -5,23 +5,23 @@ export default function Services() {
 
   const servicesData = [
     {
-      title: 'IT Support & Helpdesk',
-      description: 'We fix outages, login problems, and slow ticket response. You get faster support and a team that keeps your systems running.',
+      title: 'Managed IT Support',
+      description: 'We fix outages, login problems, and slow ticket response. You get a stable IT foundation with 25-minute critical response times and proactive monitoring.',
       link: '#contact'
     },
     {
-      title: 'Microsoft 365 & Cloud Care',
-      description: 'We fix broken M365 setups and restore files, email, and Teams access. You get a cloud environment your people can actually use.',
+      title: 'ITSM & Workflow Optimization',
+      description: 'We implement and optimize ITSM platforms (Atera, Zendesk) and design automation workflows using Power Automate to reduce manual effort and improve efficiency.',
       link: '#contact'
     },
     {
-      title: 'Security Monitoring & Backups',
-      description: 'We fix security gaps and missing backup checks before they cause downtime. You get 99.9% uptime with active monitoring in place.',
+      title: 'Cloud & Database Management',
+      description: 'We manage Microsoft 365, Azure, AWS, and SQL Server environments. We optimize queries, manage backups, and ensure your cloud platforms scale reliably.',
       link: '#contact'
     },
     {
-      title: 'Fixed Retainer Pricing',
-      description: 'You get a predictable monthly rate from R5,999. We fix surprise invoices and keep your IT cost stable.',
+      title: 'Process Mapping & Automation',
+      description: 'We analyze your operations, map workflows, and build scalable automation that improves team productivity and reduces recurring manual tasks.',
       link: '#contact'
     }
   ];
@@ -32,10 +32,10 @@ export default function Services() {
         <div className="max-w-3xl mb-16 select-none">
           <span className="section-label mb-2 block">Our Services</span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-text-dark tracking-tight leading-tight">
-            Business IT that works, not more jargon.
+            Managed IT and process optimization.
           </h2>
           <p className="text-base text-text-secondary mt-4">
-            Simple services that focus on uptime, faster support, and lower monthly IT bills for South African companies.
+            We deliver stable systems, smart automation, and operational efficiency for growing South African companies.
           </p>
         </div>
 

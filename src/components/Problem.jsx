@@ -60,10 +60,10 @@ export default function Problem() {
         <div className="text-center max-w-3xl mx-auto mb-16 select-none">
           <span className="section-label mb-2 block">IT support comparison</span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-text-dark tracking-tight leading-tight">
-            Stop paying more for slow support and unclear billing.
+            Stop paying for slow support and manual workflows.
           </h2>
           <p className="text-base text-text-secondary mt-4">
-            Compare in-house hires, legacy MSP contracts, and a predictable IT retainer.
+            Compare in-house hires, legacy MSP contracts, and a managed IT retainer with process optimization.
           </p>
         </div>
 

@@ -15,13 +15,13 @@ export default function About() {
           >
             <span className="section-label mb-2 block">About LK Digital Solutions</span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-text-dark tracking-tight leading-tight mb-6">
-              We keep business IT stable and simple.
+              We keep IT stable and operations efficient.
             </h2>
             <p className="text-base text-text-secondary leading-relaxed mb-5">
-              We fix slow support, unreliable backups, and systems that fail after updates. Our local team works with South African companies to deliver clear uptime goals and predictable IT operations.
+              We manage your IT foundation while designing the workflows and automation that improve how your team works. From cloud infrastructure to ITSM implementation, we fix slow processes alongside system reliability.
             </p>
             <p className="text-base text-text-secondary leading-relaxed">
-              In eight years, 15 businesses have relied on us for managed support, cloud care, and security monitoring. You get honest reporting, fast response times, and a fixed monthly rate.
+              In eight years, 15 businesses have relied on us for managed support, process optimization, and infrastructure design. You get honest reporting, fast response times, and a fixed monthly rate.
             </p>
           </div>
 

@@ -5,29 +5,29 @@ export default function Credentials() {
 
   const credentialsData = [
     {
-      title: 'Microsoft Partner',
-      description: 'Certified cloud support for local businesses',
-      badge: 'Partner'
+      title: 'ITSM Architecture',
+      description: 'Expert configuration of Atera & Zendesk platforms',
+      badge: 'Workflows'
     },
     {
-      title: 'ISO 27001 Ready',
-      description: 'Security processes and audit controls',
-      badge: 'Security'
+      title: 'Cloud Automation',
+      description: 'Workflow optimization via Power Automate',
+      badge: 'Automation'
     },
     {
-      title: '8 years in business',
-      description: 'Serving South African companies since 2018',
-      badge: 'Experience'
+      title: 'Enterprise M365',
+      description: 'Entra ID & Exchange environment support',
+      badge: 'Admin'
     },
     {
-      title: '15 clients served',
-      description: 'Real local firms rely on our IT retainers',
-      badge: 'Clients'
+      title: 'Data & Server Ops',
+      description: 'SQL Server, Linux, & AWS EC2 Administration',
+      badge: 'Infrastructure'
     },
     {
-      title: 'Local support team',
-      description: 'Fast response times in South African time',
-      badge: 'Local'
+      title: 'Network Deployment',
+      description: 'Large-scale VLAN & hardware configurations',
+      badge: 'Networking'
     }
   ];
 

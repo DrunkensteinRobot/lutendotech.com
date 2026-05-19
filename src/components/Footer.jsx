@@ -19,7 +19,7 @@ export default function Footer() {
               </span>
             </a>
             <p className="text-xs sm:text-sm text-text-secondary leading-relaxed max-w-xs mt-1">
-              All-in-one IT co-sourcing retainers tailored for growing professional firms. We secure your architectures, manage your helpdesks, and automate your manual administrative tasks.
+              Managed IT support + process optimization for growing firms. We stabilize your infrastructure and automate workflows to improve efficiency and reduce costs.
             </p>
             <a href="https://www.linkedin.com/in/lutendo-kone-80497915b/" target="_blank" rel="noreferrer" className="text-xs font-semibold text-accent hover:text-accent-light transition-colors">
               LinkedIn: Lutendo Kone

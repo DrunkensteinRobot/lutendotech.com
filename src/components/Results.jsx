@@ -5,34 +5,44 @@ export default function Results() {
 
   const caseStudies = [
     {
-      client: "Khashane Attorneys",
-      tag: "Cloud Security",
-      tagBg: "bg-blue-50 text-blue-600 border-blue-100",
-      challenge: "Manual local servers were prone to backup failures and lacked strict remote permissions compliance.",
-      solution: "Migrated full client archive systems to a secure, encrypted Azure blob storage with Multi-Factor Authentication.",
-      stat: "100% Security SLA Target Met",
-      quote: "LK Digital moved our operations safely to the cloud. They understood the high security requirements of legal document filing.",
-      author: "Adv. Khashane"
-    },
-    {
-      client: "Siyaphambili Logistics",
-      tag: "Process Automation",
+      client: "Lawless Clothing",
+      tag: "E-Commerce",
       tagBg: "bg-purple-50 text-purple-600 border-purple-100",
-      challenge: "Administrative staff spent 12 hours weekly typing manual customer dispatch slips into the invoicing CRM.",
-      solution: "Engineered a Microsoft Power Automate flow to extract slip inputs and update databases in real time.",
-      stat: "12 Hours Saved Weekly / User",
-      quote: "The invoice workflow they built completely removed the manual data entry bottleneck. Our dispatch team is much faster now.",
-      author: "M. Nkosi, Ops Director"
+      challenge: "Needed a robust, scalable e-commerce storefront with an easy-to-use content management system separated from the frontend.",
+      solution: "Developed a headless Next.js architecture with Sanity CMS for independent catalog management, deployed on Vercel.",
+      stat: "Lightning-Fast Storefront",
+      quote: "Delivered a production-ready, lightning-fast shopping experience that empowers us to manage our retail catalog independently.",
+      author: "Lawless Clothing"
     },
     {
-      client: "Ekurhuleni Med Clinic",
-      tag: "Network & Web Care",
+      client: "Luhuhi Trading",
+      tag: "Corporate Platform",
       tagBg: "bg-emerald-50 text-emerald-600 border-emerald-100",
-      challenge: "Legacy local website loaded slowly on mobile and frequently failed to collect patient booking requests.",
-      solution: "Rebuilt their site as a pure React dashboard and set up immediate email routing for booking inquiries.",
-      stat: "99.9% Booking Forms SLA",
-      quote: "Our patient booking requests now arrive instantly in our inbox. The new mobile speed has significantly helped our patients.",
-      author: "Dr. L. Radebe, Founder"
+      challenge: "Required a complete multi-page web presence with intuitive navigation and seamless lead generation without a complex backend.",
+      solution: "Engineered a React SPA with an integrated direct-to-email funnel via EmailJS SDK for instant quote requests.",
+      stat: "Zero-Maintenance Lead Gen",
+      quote: "Created an optimized, zero-maintenance contact pipeline that allows potential B2B clients to reach out directly from the site.",
+      author: "Luhuhi Trading"
+    },
+    {
+      client: "PMMT Solutions",
+      tag: "Product SPA",
+      tagBg: "bg-blue-50 text-blue-600 border-blue-100",
+      challenge: "Needed a highly responsive, modern digital storefront to deliver a fast, fluid user experience for a product-focused business.",
+      solution: "Built a dynamic Single-Page Application (SPA) using React and Vite, optimizing asset loading and component-driven UI.",
+      stat: "Instant Asset Loading",
+      quote: "Provides us with a high-performance digital storefront architecture that loads instantly, improving user engagement and retention.",
+      author: "PMMT Solutions"
+    },
+    {
+      client: "Khashane Attorneys Inc.",
+      tag: "Legal Services",
+      tagBg: "bg-slate-50 text-slate-700 border-slate-200",
+      challenge: "Required a sleek, trustworthy, and performant web platform focused on fast loading speeds and modern UI practices.",
+      solution: "Implemented a utility-first Tailwind CSS design with SEO-optimized asset delivery and a fully responsive structure.",
+      stat: "Polished Professional Identity",
+      quote: "Established a polished online identity for the firm, enhancing credibility and ensuring a seamless experience across all devices.",
+      author: "Khashane Attorneys Inc."
     }
   ];
 
@@ -42,19 +52,19 @@ export default function Results() {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 select-none">
-          <span className="section-label mb-2 block">Client Case Studies & Reviews</span>
+          <span className="section-label mb-2 block">Client Case Studies & Projects</span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-text-dark tracking-tight leading-tight">
-            Data-driven outcomes for Gauteng businesses.
+            Digital transformations for modern brands.
           </h2>
           <p className="text-base text-text-secondary mt-4">
-            See how LK Digital helps firms secure systems, automate manual operations, and expand.
+            See how LK Digital helps firms build high-performance web applications, scalable e-commerce platforms, and professional corporate identities.
           </p>
         </div>
 
-        {/* Case Studies Grid (3 column, premium light dashboard aesthetic) */}
+        {/* Case Studies Grid (2 column layout for 4 items) */}
         <div 
           ref={ref}
-          className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch"
+          className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch"
         >
           {caseStudies.map((study, i) => (
             <div 

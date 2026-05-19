@@ -95,7 +95,7 @@ export default function Contact() {
                 <span className="w-9 h-9 bg-accent/8 border border-accent/20 rounded-lg flex items-center justify-center text-accent">
                   ✉️
                 </span>
-                <span>support@lkdigitalsolutions.co.za</span>
+                <span>info@lutendotech.com</span>
               </div>
             </div>
           </div>
@@ -207,7 +207,7 @@ export default function Contact() {
                 )}
                 {status === 'error' && (
                   <div className="bg-red-50 border border-red-200 text-red-700 text-xs font-bold py-3 px-4.5 rounded-xl flex items-center gap-2 animate-fadeIn">
-                    <span className="text-sm">⚠️</span> An error occurred while sending. Please contact support@lkdigitalsolutions.co.za directly.
+                    <span className="text-sm">⚠️</span> An error occurred while sending. Please contact info@lutendotech.com directly.
                   </div>
                 )}
 

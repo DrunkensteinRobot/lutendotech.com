@@ -67,7 +67,7 @@ export default function Hero() {
             {[
               "Unlimited Remote IT Support & Network Care",
               "Automated Cloud Scaling & Microsoft 365 Setup",
-              "Proactive AZ-104 Certified Architecture Audits",
+              "Proactive Cloud Architecture Audits",
               "AI-Driven Workflows to Cut Internal Manual Tasks"
             ].map((text, i) => (
               <li key={i} className="flex items-start gap-3 text-sm font-medium text-text-secondary select-none">
@@ -241,7 +241,7 @@ export default function Hero() {
                     </span>
                     <div className="leading-tight">
                       <div className="text-[9px] font-bold text-text-dark">Cloud Network Integrity</div>
-                      <div className="text-[8px] text-text-muted">Proactive Azure AZ-104 security active</div>
+                      <div className="text-[8px] text-text-muted">Proactive Azure cloud security active</div>
                     </div>
                   </div>
                   <span className="text-[9px] font-bold text-emerald-500 bg-emerald-50 border border-emerald-100 rounded px-2 py-0.5">

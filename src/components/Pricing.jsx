@@ -42,7 +42,7 @@ export default function Pricing() {
       description: "Tailored IT co-sourcing plans for businesses requiring dedicated cloud security operations.",
       features: [
         "Multi-branch network configuration",
-        "Dedicated AZ-104 solutions engineer",
+        "Dedicated Cloud Solutions Engineer",
         "Custom application builds & API setups",
         "24/7/365 server threat scanning",
         "Custom, high-fidelity security SLAs"

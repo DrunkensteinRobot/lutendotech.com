@@ -42,7 +42,7 @@ export default function Footer() {
               Gauteng Local Support
             </h4>
             <p className="text-xs text-text-secondary leading-relaxed">
-              Our certified AZ-104 solutions engineers operate from Sandton, Johannesburg. We deliver fast hybrid helpdesk response queues to clients throughout Gauteng.
+              Our certified cloud solutions engineers operate from Sandton, Johannesburg. We deliver fast hybrid helpdesk response queues to clients throughout Gauteng.
             </p>
             {/* South Africa flag and location pill */}
             <div className="inline-flex items-center gap-2 bg-white border border-border-dark py-1.5 px-3 rounded-xl w-fit shadow-2xs mt-2 select-none text-[10px] font-extrabold text-text-secondary">

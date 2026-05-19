@@ -7,7 +7,7 @@ export default function StatBar() {
   const statsList = [
     { target: 99.4, suffix: '%', label: 'Average SLA Uptime SLA', delay: 0 },
     { target: 15, suffix: ' Min', label: 'Critical Response Time', delay: 100 },
-    { target: 104, prefix: 'AZ-', label: 'Azure Architecture Design', delay: 200 },
+    { target: 50, suffix: '+', label: 'Cloud Deployments', delay: 200 },
     { target: 100, suffix: '%', label: 'Gauteng Customer Satisfaction', delay: 300 }
   ];
 
@@ -35,7 +35,6 @@ export default function StatBar() {
 
 function CounterItem({ target, suffix = '', prefix = '', label, delay, parentVisible }) {
   const [currentVal, setCurrentVal] = useState(0);
-  const [showAzureString, setShowAzureString] = useState(false);
   const animatedRef = useRef(false);
 
   useEffect(() => {
@@ -54,31 +53,17 @@ function CounterItem({ target, suffix = '', prefix = '', label, delay, parentVis
         const easeProgress = 1 - Math.pow(1 - progress, 3);
         const nextValue = easeProgress * target;
 
-        if (prefix === 'AZ-') {
-          // Special Azure dynamic transition representation
-          const displayInt = Math.floor(nextValue);
-          setCurrentVal(displayInt);
-          if (progress >= 0.95) {
-            setShowAzureString(true);
-          }
+        // Float vs Int formatting
+        if (target % 1 !== 0) {
+          setCurrentVal(nextValue.toFixed(1));
         } else {
-          // Float vs Int formatting
-          if (target % 1 !== 0) {
-            setCurrentVal(nextValue.toFixed(1));
-          } else {
-            setCurrentVal(Math.floor(nextValue));
-          }
+          setCurrentVal(Math.floor(nextValue));
         }
 
         if (progress < 1) {
           window.requestAnimationFrame(step);
         } else {
-          if (prefix === 'AZ-') {
-            setCurrentVal(104);
-            setShowAzureString(true);
-          } else {
-            setCurrentVal(target);
-          }
+          setCurrentVal(target);
           animatedRef.current = true;
         }
       };
@@ -87,12 +72,12 @@ function CounterItem({ target, suffix = '', prefix = '', label, delay, parentVis
     }, delay);
 
     return () => clearTimeout(startTimeout);
-  }, [parentVisible, target, delay, prefix]);
+  }, [parentVisible, target, delay]);
 
   return (
     <div className="flex flex-col items-center text-center select-none">
       <span className="text-3xl sm:text-4xl font-extrabold text-accent mb-1 tracking-tight">
-        {prefix === 'AZ-' ? (showAzureString ? 'AZ-104' : `AZ-${currentVal}`) : `${prefix}${currentVal}${suffix}`}
+        {`${prefix}${currentVal}${suffix}`}
       </span>
       <span className="text-xs sm:text-sm font-medium text-text-secondary">
         {label}

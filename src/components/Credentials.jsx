@@ -10,7 +10,7 @@ export default function Credentials() {
       badge: "☁️ Certified"
     },
     {
-      title: "Azure AZ-104",
+      title: "Cloud Architecture",
       description: "Infrastructure Engineering",
       badge: "🛡️ Administrator"
     },

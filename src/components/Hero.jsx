@@ -83,7 +83,7 @@ export default function Hero() {
 
           <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-text-muted mt-2 font-medium">
             <span className="flex items-center gap-1">
-              <span className="text-accent">✓</span> 15 businesses trust our local IT support
+              <span className="text-accent">✓</span> 15 businesses trust our local IT operations
             </span>
             <span className="flex items-center gap-1">
               <span className="text-accent">✓</span> 8 years serving local companies
@@ -130,7 +130,7 @@ export default function Hero() {
                   {[
                     { label: 'Overview', icon: 'M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25', active: true },
                     { label: 'Cloud VMs', icon: 'M5.25 14.25h13.5m-13.5 0a3 3 0 01-3-3m3 3a3 3 0 100 6h13.5a3 3 0 100-6m-16.5-3a3 3 0 013-3h13.5a3 3 0 013 3m-19.5 0a3.75 3.75 0 01.75-2.243m18.75 2.243a3.75 3.75 0 00-.75-2.243M5.25 5.25h13.5m-13.5 0a3 3 0 01-3-3m3 3a3 3 0 100 6h13.5a3 3 0 100-6m-16.5-3a3 3 0 013-3h13.5a3 3 0 013 3', active: false },
-                    { label: 'Helpdesk', icon: 'M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z', active: false },
+                    { label: 'ITSM', icon: 'M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z', active: false },
                     { label: 'Workflows', icon: 'M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z', active: false }
                   ].map((item, i) => (
                     <div 
@@ -195,11 +195,11 @@ export default function Hero() {
                     </div>
                   </div>
 
-                  {/* Card 2: Helpdesk SLA SLA */}
+                  {/* Card 2: ITSM SLA */}
                   <div className="bg-white border border-border-light rounded-xl p-3 shadow-2xs flex flex-col justify-between">
                     <div>
                       <span className="text-[9px] font-bold text-text-muted uppercase tracking-wider block mb-2">
-                        Helpdesk SLAs
+                        ITSM SLAs
                       </span>
                       <div className="flex items-center gap-2">
                         <div className="w-8 h-8 rounded-full border-2 border-accent flex items-center justify-center text-[8px] font-black text-accent">

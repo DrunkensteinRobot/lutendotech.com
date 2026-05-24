@@ -18,7 +18,7 @@ export default function FAQ() {
     },
     {
       question: 'Do you provide local support in South Africa?',
-      answer: 'Yes. We serve South African businesses with a local support team and fast response times in the same time zone. Remote clients with similar needs can also get managed IT support online.'
+      answer: 'Yes. We serve South African businesses with a local operations team and fast response times in the same time zone. Remote clients with similar needs can also get managed IT operations online.'
     },
     {
       question: 'What happens after I submit a request?',

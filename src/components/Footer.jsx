@@ -64,8 +64,8 @@ export default function Footer() {
             © {currentYear} LK Digital Solutions. All rights reserved.
           </span>
           <div className="flex gap-5">
-            <a href="#contact" className="hover:text-accent transition-colors">IT Support SLA Helpdesk</a>
-            <a href="#pricing" className="hover:text-accent transition-colors">Retainers Agreement</a>
+            <a href="#contact" className="hover:text-accent transition-colors">IT operations support</a>
+            <a href="#pricing" className="hover:text-accent transition-colors">Managed IT retainers</a>
           </div>
         </div>
 

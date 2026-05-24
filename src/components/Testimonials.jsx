@@ -30,7 +30,7 @@ export default function Testimonials() {
       role: 'Practice Manager',
       company: 'Khashane Attorneys',
       industry: 'Legal Services',
-      text: 'Our backups and security are finally trustworthy, and the support team answers critical issues quickly.'
+      text: 'Our backups and security are finally trustworthy, and the operations team answers critical issues quickly.'
     }
   ];
 
@@ -40,7 +40,7 @@ export default function Testimonials() {
         <div className="text-center max-w-3xl mx-auto mb-14 select-none">
           <span className="section-label mb-2 block">Client Reviews</span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-text-dark tracking-tight leading-tight">
-            15 businesses rely on us for fast IT support.
+            15 businesses rely on us for managed IT and smarter operations.
           </h2>
         </div>
 

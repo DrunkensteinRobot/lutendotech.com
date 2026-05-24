@@ -13,6 +13,7 @@ import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Certifications from './components/Certifications';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
       </main>
 
       <Footer />
+      <Analytics />
     </div>
   );
 }

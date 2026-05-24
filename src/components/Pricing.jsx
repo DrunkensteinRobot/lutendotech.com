@@ -24,7 +24,7 @@ export default function Pricing() {
       period: "per month",
       description: "Our highly recommended all-in-one IT partnership plan for established firms seeking scaling care.",
       features: [
-        "Unlimited remote user helpdesk care",
+        "Unlimited remote user support",
         "Complete Azure Cloud VM administration",
         "M365 & Exchange email migrations",
         "2 workflow automations scripted / month",
